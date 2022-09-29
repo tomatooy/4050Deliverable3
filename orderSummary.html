@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0c2436;
+
+        }
+
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+        h3{
+            width: 100%;
+            text-align: right;
+            margin: 0 auto;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+            background-color: white;
+
+        }
+
+        .button-wrapper {
+            width: 50%;
+            margin: auto;
+        }
+
+        /* Full-width input fields */
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit button */
+        .registerbtn {
+            color: white;
+            padding: 16px 20px;
+            margin: 8px auto;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 1;
+            background-color: lightskyblue;
+
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+
+        /* Add a blue text color to links */
+        a {
+            color: dodgerblue;
+        }
+
+        /* Set a grey background color and center the text of the "sign in" section */
+        .checkOut {
+            color: white;
+            text-align: center;
+            margin: auto;
+            background-color: lightskyblue;
+            padding: 16px 20px
+        }
+
+        .red-star {
+            color: red;
+        }
+        span{
+            float: right;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <form>
+        <div class="container">
+            <h1>Your Order</h1>
+            <p>Please double check on your order before check out</p>
+            <hr>
+            <div>
+                <h1>John Wick: Chapter 3 - Parabellum</h1>
+                <div>Time: 6:00 9/20/2022</div>
+                <hr>
+                <div>Adult * 3 $40ea <span>$120</span></div>
+                <div>Seat: h1 h2 h3</div>
+                <hr>
+                <div>Teen * 2 $30ea <span>$60</span></div>
+                <div>Seat: h4 h5 h6</div>
+                <br>
+                <h3 style="float:right">Tax:$20</h3>
+                <h3 style="float:right">Total:$200</h3>
+            </div>
+            <div style="width:100%; display:flex;">
+                <a href="./checkOut.html" class="checkOut">Proceed to check out</a>
+            </div>
+        </div>
+
+    </form>
+
 </body>
+
 </html>
